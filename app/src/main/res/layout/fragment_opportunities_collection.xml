@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.OpportunitiesCollectionFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:nestedScrollingEnabled="false"
+            android:theme="?attr/actionBarStyle">
+
+            <ImageButton
+                android:id="@+id/info_button"
+                style="@android:style/Widget.Material.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp"
+                android:scaleType="center"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@android:drawable/ic_dialog_info" />
+
+            <TextSwitcher
+                android:id="@+id/text_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out">
+
+                <include layout="@layout/action_bar_text" />
+                <include layout="@layout/action_bar_text" />
+
+            </TextSwitcher>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

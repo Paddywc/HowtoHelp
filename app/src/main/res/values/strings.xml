@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">HowtoHelp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="donate_button_text">Donate</string>
+    <string name="microvolunteering_button_text">Help</string>
+    <string name="politician_overline">Contact your Public Representative</string>
+    <string name="politician_card_body">%1$s (%3$s) is an elected representative in %2$s.\n\nContact them and call for action on this issue</string>
+    <string name="twitter_button_text">Twitter</string>
+    <string name="email_button_text">Email</string>
+    <string name="email_url">mailto:%s</string>
+    <string name="twitter_url">https://twitter.com/%s</string>
+
+    <string name="step">Step %1$s:</string>
+    <string name="step_one_title">Share Article with HowtoHelp</string>
+    <string name="step_two_title">See How You Can Help</string>
+    <string name="step_three_title">Take Action</string>
+    <string name="guide_complete_title">User Guide Complete</string>
+    <string name="step_one_body">HowtoHelp is like as an add-on to your favourite Android web browser or news application. When you\'re reading about a social issue, press the browser or application\'s share button and select HowtoHelp. The share button normally looks like the above image\n\nSwipe left to see step 2</string>
+    <string name="step_two_body">HowtoHelp will tell you what you can do right now to combat the issue. All of these opportunities can be completed within minutes. You can navigate between opportunities by swiping (just like you\'re doing right now)</string>
+    <string name="step_three_body">Press an opportunity\’s button to complete it in your web browser</string>
+    <string name="guide_complete_body">That’s it! You’re good to go.\n\nRemember to think of HowtoHelp whenever you want to help tackle an issue you’re reading about. It only takes a few minutes</string>
+    <string name="user_guide_button">Button</string>
+    <string name="user_guide_button_press_message">That\'s it! You\'re ready to go</string>
+    <string name="user_guide_title">Reading About a Social Issue and Want to Act Now?</string>
+    <string name="user_guide_subtitle">Here\'s HowtoHelp</string>
+    <string name="guide_toolbar_title">HowtoHelp Guide</string>
+
+    <string name="other_dialog_title">Social Issue Not Recognised</string>
+    <string name="other_dialog_body">Sorry, we didn\’t find a social issue in the article you sent us.\nHowtoHelp covers the following issues:\n\n
+Abortion Rights\n
+Climate Change\n
+Disability Support\n
+Homelessness\n
+LGBT Rights\n
+Mental Health\n
+Racism\n
+Sexism\n
+Sexual Harassment and Assault
+</string>
+
+    <string name="closing_application_title">Application Closing</string>
+    <string name="outside_market_body">Sorry, we currently only serve users in the UK, Ireland, USA, or Canada</string>
+    <string name="location_not_granted_body">"Sorry, in order to work, we need access to your location data</string>
+
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_body">In order to fetch you opportunities, we need your device to be connected to the internet\n\nPlease connect your device and send the article again</string>
+
+    <string name="no_location_title">Unable to Find Location</string>
+    <string name="no_location_body">Sorry, we have been unable to determine your location.\n\nHowtoHelp requires location data to work\n\nPlease make sure your GPS is turned on and try again</string>
+
+    <string name="ask_location_title">Access to Location Data</string>
+    <string name="ask_location_body">Hi There.\n\nHowtoHelp tailors the opportunities we suggest to your location. In order to do this, we need access to your device location data. We will never store this data.\n\n"We will now ask for access to your location data. You\’ll need to grant it if you wish to use HowtoHelp.\n\nThanks"</string>
+    <string name="ask_location_button">I Understand, Ask Away</string>
+    <string name="invalid_url_title">Invalid URL entered</string>
+    <string name="invalid_url_body">Sorry, we can\'t find a valid URL in the text you sent us. Please try again\n\nThe URL should start with \'https://\' or \'http://\'</string>
+    <string name="permission_denied">Location Required</string>
+    <string name="faq_toolbar_title">FAQs</string>
+
+
+    <string name="contact_dev_title">Can I contact the developer?</string>
+    <string name="contact_dev_body">Please do! Click the button below to send any questions, comments, or concerns that you have</string>
+    <string name="developer_email">mailto:pwcremen@gmail.com</string>
+    <string name="issues_covered_title">What issues does HowtoHelp cover?</string>
+    <string name="issues_covered_body">At release, HowtoHelp covers the below issues. We hope to add more in the future if the application finds an audience. We’ll also focus on improving how accurate HowtoHelp is when classifying an article.
+        \n\n
+&#8226; Abortion Rights\n
+&#8226; Climate Change\n
+&#8226; Disability Support\n
+&#8226; Homelessness\n
+&#8226; LGBT Rights\n
+&#8226; Mental Health\n
+&#8226; Racism\n
+&#8226; Sexism\n
+&#8226; Sexual Harassment and Assault
+</string>
+    <string name="political_stance_title">Does HowtoHelp have a political stance?</string>
+    <string name="political_stance_body">HowtoHelp is not a political app. We hope that users of all ideologies can enjoy HowtoHelp. However, it should be noted that we accept Amnesty International’s definition of human rights. Included among these rights are same-sex marriage and access to abortion services. Our suggestions for articles relating to LGBT issues or abortion reflect this.</string>
+    <string name="faq_overline">Question</string>
+    <string name="privacy_title">Where can I view your privacy policy?</string>
+    <string name="privacy_body">Just click the button below</string>
+    <string name="privacy_button">Privacy Policy</string>
+    <string name="privacy_policy_url">https://sites.google.com/view/howtohelpprivacypolicy/home</string>
+    <string name="source_code_title">Can I view HowtoHelp’s source code?</string>
+    <string name="source_code_body">Yep! The source code is available on the developer’s GitHub page.</string>
+    <string name="source_code_button">Source Code</string>
+    <string name="source_code_url">https://github.com/paddywc</string>
+    <string name="funding_title">How is this application funded?</string>
+    <string name="funding_body">It’s not. HowtoHelp began life as a college project; there were no direct development costs. We don’t make any money from the application. </string>
+</resources>

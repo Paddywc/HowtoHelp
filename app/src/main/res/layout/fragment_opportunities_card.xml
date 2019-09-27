@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="opportunity"
+            type="androidx.lifecycle.LiveData&lt;com.example.howtohelp.model.Opportunity&gt;" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/donation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:visibility="@{opportunity.opportunityType.equals(&quot;Donation&quot;) ? View.VISIBLE: View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/donation_card_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/handdonation"
+                    app:tint="#ffffff"
+                    app:tintMode="multiply" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/donation_card_overline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:alpha="0.6"
+                    android:text="@{opportunity.opportunityType}"
+                    android:textAppearance="?textAppearanceOverline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/donation_card_header"
+                    tools:text="@sample/opportunitesdata.json/Donation/opportunityType" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/donation_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.87"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@{opportunity.title}"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/donation_card_overline"
+                    tools:text="@sample/opportunitesdata.json/Donation/title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/donation_card_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:alpha="0.6"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:text="@{opportunity.description}"
+                    android:textAppearance="?textAppearanceBody2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/donation_card_title"
+                    tools:text="@sample/opportunitesdata.json/Donation/informationOne" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/donation_card_button"
+                    style="@style/CardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="goToUrl"
+                    android:tag="@{opportunity.url}"
+                    android:text="@string/donate_button_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/donation_card_body" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/politician"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:visibility="@{opportunity.opportunityType.equals(&quot;Politician&quot;) ? View.VISIBLE: View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/politician_card_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/peoplewithmegaphone"
+                    app:tint="#ffffff"
+                    app:tintMode="multiply" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/politician_card_overline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:alpha="0.6"
+                    android:text="@string/politician_overline"
+                    android:textAppearance="?textAppearanceOverline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/politician_card_header" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/politician_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.87"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@{opportunity.title}"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/politician_card_overline"
+                    tools:text="@sample/opportunitesdata.json/Politician/title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/politician_card_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:alpha="0.6"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:text="@{@string/politician_card_body(opportunity.title, opportunity.area, opportunity.party)}"
+                    android:textAppearance="?textAppearanceBody2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/politician_card_title"
+                    tools:text="@sample/opportunitesdata.json/Politician/informationOne" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/politician_email_button"
+                    style="@style/CardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="goToUrl"
+                    android:tag="@{@string/email_url(opportunity.email)}"
+                    android:text="@string/email_button_text"
+                    android:visibility="@{opportunity.email !=null ? View.VISIBLE: View.GONE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/politician_card_body" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/politician_twitter_button"
+                    style="@style/CardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="goToUrl"
+                    android:tag="@{@string/twitter_url(opportunity.twitter)}"
+                    android:text="@string/twitter_button_text"
+                    android:visibility="@{opportunity.twitter != null ? View.VISIBLE: View.GONE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/politician_email_button"
+                    app:layout_constraintTop_toBottomOf="@id/politician_card_body" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/microvolunteering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:visibility="@{opportunity.opportunityType.equals(&quot;Micro Volunteering&quot;) ? View.VISIBLE: View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/microvolunteering_card_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/handscommingtogether"
+                    app:tint="#ffffff"
+                    app:tintMode="multiply" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/microvolunteering_card_overline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:alpha="0.6"
+                    android:text="@{opportunity.microVolunteeringType}"
+                    android:textAppearance="?textAppearanceOverline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/microvolunteering_card_header"
+                    tools:text="@sample/opportunitesdata.json/MicroVolunteering/opportunityType" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/microvolunteering_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.87"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@{opportunity.title}"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/microvolunteering_card_overline"
+                    tools:text="@sample/opportunitesdata.json/MicroVolunteering/title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/microvolunteering_card_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:alpha="0.6"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:text="@{opportunity.description}"
+                    android:textAppearance="?textAppearanceBody2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/microvolunteering_card_title"
+                    tools:text="@sample/opportunitesdata.json/MicroVolunteering/informationOne" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/microvolunteering_card_button"
+                    style="@style/CardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="goToUrl"
+                    android:tag="@{opportunity.url}"
+                    android:text="@string/microvolunteering_button_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/microvolunteering_card_body" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+
+

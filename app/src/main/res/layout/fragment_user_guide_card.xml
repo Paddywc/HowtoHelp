@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserGuideCardFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/outer_user_guide_card_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/user_guide_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/user_guide_card_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tintMode="multiply" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/user_guide_card_overline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:alpha="0.6"
+                    android:textAppearance="?textAppearanceOverline"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_guide_card_header"
+                    tools:text="@sample/opportunitesdata.json/Donation/opportunityType" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/user_guide_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.87"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:paddingRight="24dp"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_guide_card_overline"
+                    tools:text="@sample/opportunitesdata.json/Donation/title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/user_guide_card_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:alpha="0.6"
+                    android:firstBaselineToTopHeight="24dp"
+                    android:lastBaselineToBottomHeight="24dp"
+                    android:textAppearance="?textAppearanceBody2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/user_guide_card_title"
+                    tools:text="@sample/opportunitesdata.json/Donation/informationOne" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/user_guide_card_button"
+                    style="@style/CardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/user_guide_button"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/user_guide_card_body" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

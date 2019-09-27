@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".ui.UserGuideFragment">
+
+
+    <com.google.android.material.circularreveal.CircularRevealFrameLayout
+        android:id="@+id/guide_main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:backgroundTintMode="src_in"
+        android:padding="@dimen/cardview_default_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal|vertical|none">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/main_text_heading"
+
+                style="?attr/textAppearanceHeadline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingEnd="16dp"
+                android:text="@string/user_guide_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/separator_line"
+                android:layout_width="200dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:background="@android:drawable/button_onoff_indicator_off"
+                android:backgroundTint="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_text_heading"
+                app:layout_constraintVertical_bias="0.24000001" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/main_text_subheading"
+
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/user_guide_subtitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separator_line" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:translationY="-20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCompat"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@+id/guide_main_text" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="horizontal"
+        app:divider="@android:drawable/bottom_bar"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:nestedScrollingEnabled="false"
+
+            android:theme="?attr/actionBarStyle"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="?attr/textAppearanceHeadline6"
+            app:titleTextColor="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/back_to_opportunities_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:backgroundTint="@android:color/transparent"
+                android:src="?attr/homeAsUpIndicator"
+                android:tint="?attr/colorButtonNormal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/user_guide_title"
+                style="?attr/textAppearanceHeadline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/guide_toolbar_title"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+            <ImageButton
+                android:id="@+id/faq_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:background="@android:color/transparent"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/faq_speech_bubble" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

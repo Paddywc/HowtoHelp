@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:maxLines="1"
+    android:textAlignment="gravity"
+    android:textAppearance="?attr/textAppearanceHeadline5"
+    android:textColor="@android:color/white"
+    app:autoSizeMaxTextSize="20sp"
+    app:autoSizeMinTextSize="12sp"
+    app:autoSizeStepGranularity="2sp"
+    app:autoSizeTextType="uniform"
+    tools:text="Help Combat Sexual Harassment and Assault"
+    tools:showIn="@layout/fragment_opportunities_collection" />

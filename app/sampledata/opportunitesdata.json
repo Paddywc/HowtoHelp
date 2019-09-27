@@ -1,0 +1,29 @@
+{
+  "MicroVolunteering": {
+    "informationOne": "This project explores how people form attitudes about immigration policies. While immigration is a critical policy issue in America and beyond,  researchers often disagree about what factors truly drive individual attitudes towards open or closed immigration policies. A better understanding of these factors can potentially help policy makers more effectively design policies to benefit society. In this study you will be asked whether you support or oppose certain immigration-related foreign policies, and will be invited to elaborate on how you formed your opinions.",
+    "informationFour": null,
+    "informationThree": null,
+    "informationTwo": "Complete Research Survey",
+    "opportunityType": "Micro Volunteering",
+    "url": "http://dlabss.harvard.edu/immigration-attitudes",
+    "title": "Immigration Attitudes "
+  },
+  "Donation": {
+      "informationOne": "Pavee Point is a national non-governmental organisation committed to the attainment of human rights for Irish Travellers and Roma. The organisation is comprised of Travellers, Roma and members of the majority settled population working in partnership to address the needs of Travellers and Roma as minority ethnic groups experiencing exclusion and marginalisation.",
+      "informationFour": null,
+      "informationThree": null,
+      "informationTwo": null,
+      "opportunityType": "Donation",
+      "url": "https://www.altruism.ie/charity/pavee-point",
+      "title": "Pavee Point Traveller & Roma Centre"
+    },
+  "Politician": {
+      "informationOne": "RBoydBarrett",
+      "informationFour": null,
+      "informationThree": "Solidarity–People Before Profit",
+      "informationTwo": "Dún Laoghaire",
+      "opportunityType": "Politician",
+      "url": "RBoydBarrett",
+      "title": "Richard Boyd Barrett"
+    }
+}
