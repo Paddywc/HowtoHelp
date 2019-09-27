@@ -83,7 +83,7 @@ Sexual Harassment and Assault
     <string name="source_code_title">Can I view HowtoHelp’s source code?</string>
     <string name="source_code_body">Yep! The source code is available on the developer’s GitHub page.</string>
     <string name="source_code_button">Source Code</string>
-    <string name="source_code_url">https://github.com/paddywc</string>
+    <string name="source_code_url">https://github.com/paddywc/howtohelp</string>
     <string name="funding_title">How is this application funded?</string>
     <string name="funding_body">It’s not. HowtoHelp began life as a college project; there were no direct development costs. We don’t make any money from the application. </string>
 </resources>
