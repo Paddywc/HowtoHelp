@@ -8,7 +8,7 @@ import androidx.test.uiautomator.UiSelector;
 import com.howtohelp.howtohelp.ui.OpportunitiesActivity;
 
 import org.junit.Rule;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 import static org.junit.Assert.assertTrue;

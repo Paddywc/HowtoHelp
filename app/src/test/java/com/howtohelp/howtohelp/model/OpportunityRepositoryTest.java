@@ -11,8 +11,8 @@ import com.howtohelp.howtohelp.model.Data.MicroVolunteeringRepository;
 import com.howtohelp.howtohelp.model.Data.Politician;
 import com.howtohelp.howtohelp.model.Data.PoliticianRepository;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.ClassRule;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

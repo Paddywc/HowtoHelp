@@ -15,19 +15,16 @@ import com.howtohelp.howtohelp.ui.OpportunitiesActivity;
 import com.howtohelp.howtohelp.ui.OpportunitiesViewModel;
 
 import org.junit.Rule;
-import org.junit.jupiter.api.Test;
-
-import static androidx.test.espresso.action.ViewActions.swipeLeft;
-import static androidx.test.espresso.matcher.ViewMatchers.withId;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
-
-import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
-import static org.junit.Assert.assertTrue;
-import static androidx.test.espresso.Espresso.*;
+import org.junit.Test;
 
 import java.util.List;
 
 import static android.content.Intent.ACTION_SEND;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.swipeLeft;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
+import static org.junit.Assert.assertTrue;
 
 public final class DisplayQueryResultsOnScreenTest {
 

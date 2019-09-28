@@ -9,11 +9,10 @@ import com.howtohelp.howtohelp.ui.OpportunitiesActivity;
 import com.howtohelp.howtohelp.ui.OpportunitiesViewModel;
 
 import org.junit.Rule;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static android.content.Intent.ACTION_SEND;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public final class ClassifySentUrlTest {
 

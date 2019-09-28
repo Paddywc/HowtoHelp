@@ -16,8 +16,8 @@ import com.howtohelp.howtohelp.model.Opportunity;
 import com.howtohelp.howtohelp.ui.OpportunitiesActivity;
 import com.howtohelp.howtohelp.ui.OpportunitiesViewModel;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.Rule;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

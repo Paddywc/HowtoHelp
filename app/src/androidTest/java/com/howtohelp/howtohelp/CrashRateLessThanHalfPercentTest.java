@@ -9,7 +9,7 @@ import androidx.test.rule.GrantPermissionRule;
 import com.howtohelp.howtohelp.ui.OpportunitiesActivity;
 
 import org.junit.Rule;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static android.content.Intent.ACTION_SEND;
 import static org.junit.Assert.assertTrue;

@@ -10,8 +10,8 @@ import com.howtohelp.howtohelp.model.OpportunityRepository;
 import com.howtohelp.howtohelp.ui.OpportunitiesViewModel;
 
 import org.junit.ClassRule;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 

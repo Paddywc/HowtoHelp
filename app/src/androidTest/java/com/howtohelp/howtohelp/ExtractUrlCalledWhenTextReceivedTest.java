@@ -6,12 +6,11 @@ import androidx.test.rule.ActivityTestRule;
 import com.howtohelp.howtohelp.model.Data.SocialIssueRepository;
 import com.howtohelp.howtohelp.ui.OpportunitiesActivity;
 
+import org.junit.Rule;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
