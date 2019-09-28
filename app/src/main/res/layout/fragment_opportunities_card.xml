@@ -10,7 +10,7 @@
 
         <variable
             name="opportunity"
-            type="androidx.lifecycle.LiveData&lt;com.example.howtohelp.model.Opportunity&gt;" />
+            type="androidx.lifecycle.LiveData&lt;com.howtohelp.howtohelp.model.Opportunity&gt;" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -92,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:onClick="goToUrl"
                     android:tag="@{opportunity.url}"
@@ -179,7 +179,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:onClick="goToUrl"
                     android:tag="@{@string/email_url(opportunity.email)}"
@@ -195,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:onClick="goToUrl"
                     android:tag="@{@string/twitter_url(opportunity.twitter)}"
@@ -284,7 +284,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:onClick="goToUrl"
                     android:tag="@{opportunity.url}"

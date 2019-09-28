@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.howtohelp">
+    package="com.howtohelp.howtohelp">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature android:name="android.hardware.telephony" android:required="true" />
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
 
 
     <application
-        android:name=".App"
+        android:name="com.howtohelp.howtohelp.App"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
@@ -23,7 +25,7 @@
 
 
         <activity
-            android:name=".ui.OpportunitiesActivity"
+            android:name="com.howtohelp.howtohelp.ui.OpportunitiesActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait">
 

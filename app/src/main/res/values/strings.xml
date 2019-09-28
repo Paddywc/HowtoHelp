@@ -31,7 +31,7 @@ Abortion Rights\n
 Climate Change\n
 Disability Support\n
 Homelessness\n
-LGBT Rights\n
+LGBTQ Rights\n
 Mental Health\n
 Racism\n
 Sexism\n
@@ -59,7 +59,7 @@ Sexual Harassment and Assault
 
     <string name="contact_dev_title">Can I contact the developer?</string>
     <string name="contact_dev_body">Please do! Click the button below to send any questions, comments, or concerns that you have</string>
-    <string name="developer_email">mailto:pwcremen@gmail.com</string>
+    <string name="developer_email">mailto:howtohelpapp@gmail.com</string>
     <string name="issues_covered_title">What issues does HowtoHelp cover?</string>
     <string name="issues_covered_body">At release, HowtoHelp covers the below issues. We hope to add more in the future if the application finds an audience. We’ll also focus on improving how accurate HowtoHelp is when classifying an article.
         \n\n
@@ -67,14 +67,14 @@ Sexual Harassment and Assault
 &#8226; Climate Change\n
 &#8226; Disability Support\n
 &#8226; Homelessness\n
-&#8226; LGBT Rights\n
+&#8226; LGBTQ Rights\n
 &#8226; Mental Health\n
 &#8226; Racism\n
 &#8226; Sexism\n
 &#8226; Sexual Harassment and Assault
 </string>
     <string name="political_stance_title">Does HowtoHelp have a political stance?</string>
-    <string name="political_stance_body">HowtoHelp is not a political app. We hope that users of all ideologies can enjoy HowtoHelp. However, it should be noted that we accept Amnesty International’s definition of human rights. Included among these rights are same-sex marriage and access to abortion services. Our suggestions for articles relating to LGBT issues or abortion reflect this.</string>
+    <string name="political_stance_body">HowtoHelp is not a political app. We hope that users of all ideologies can enjoy HowtoHelp. However, it should be noted that we accept Amnesty International’s definition of human rights. Included among these rights are same-sex marriage and access to abortion services. Our suggestions for articles relating to LGBTQ issues or abortion reflect this.</string>
     <string name="faq_overline">Question</string>
     <string name="privacy_title">Where can I view your privacy policy?</string>
     <string name="privacy_body">Just click the button below</string>
