@@ -19,6 +19,12 @@ import com.howtohelp.howtohelp.R;
 /** Fragment for a card displayed in by the user guide adapter */
 public class FaqCardFragment extends Fragment {
 
+
+  private ImageView imageView;
+  private TextView title;
+  private  TextView body;
+  private Button button;
+
   /** Instantiates a new User guide card fragment. */
   public FaqCardFragment() {
     // Required empty public constructor
@@ -54,10 +60,10 @@ public class FaqCardFragment extends Fragment {
       TextView overline = view.findViewById(R.id.user_guide_card_overline);
       overline.setText(res.getString(R.string.faq_overline));
 
-      ImageView imageView = view.findViewById(R.id.user_guide_card_header);
-      TextView title = view.findViewById(R.id.user_guide_card_title);
-      TextView body = view.findViewById(R.id.user_guide_card_body);
-      Button button = view.findViewById(R.id.user_guide_card_button);
+       imageView = view.findViewById(R.id.user_guide_card_header);
+       title = view.findViewById(R.id.user_guide_card_title);
+       body = view.findViewById(R.id.user_guide_card_body);
+       button = view.findViewById(R.id.user_guide_card_button);
 
       if (position == 0) {
         imageView.setImageResource(R.drawable.contact_dev);
@@ -112,5 +118,14 @@ public class FaqCardFragment extends Fragment {
         body.setText(res.getString(R.string.funding_body));
       }
     }
+  }
+
+  @Override
+  public void onDestroy() {
+    super.onDestroy();
+    imageView = null;
+    title = null;
+    body = null;
+    button = null;
   }
 }

@@ -18,6 +18,10 @@ import com.howtohelp.howtohelp.R;
 /** Fragment for a card displayed in by the user guide adapter */
 public class UserGuideCardFragment extends Fragment {
 
+  private ImageView imageView;
+  private TextView title;
+  private TextView body;
+
   /** Instantiates a new User guide card fragment. */
   public UserGuideCardFragment() {
     // Required empty public constructor
@@ -65,9 +69,9 @@ public class UserGuideCardFragment extends Fragment {
       Resources res = getResources();
       overline.setText(String.format(res.getString(R.string.step), positionAsString));
 
-      ImageView imageView = view.findViewById(R.id.user_guide_card_header);
-      TextView title = view.findViewById(R.id.user_guide_card_title);
-      TextView body = view.findViewById(R.id.user_guide_card_body);
+      imageView = view.findViewById(R.id.user_guide_card_header);
+      title = view.findViewById(R.id.user_guide_card_title);
+      body = view.findViewById(R.id.user_guide_card_body);
 
       // Sets the first cards value's to step 1 of the tutorial
       if (position == 0) {
@@ -95,5 +99,13 @@ public class UserGuideCardFragment extends Fragment {
             });
       }
     }
+  }
+
+  @Override
+  public void onDestroy() {
+    super.onDestroy();
+    imageView = null;
+    title = null;
+    body = null;
   }
 }
