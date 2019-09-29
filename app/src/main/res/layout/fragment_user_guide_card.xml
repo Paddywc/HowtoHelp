@@ -23,7 +23,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/user_guide_card_header"
@@ -70,7 +70,10 @@
                     android:alpha="0.6"
                     android:firstBaselineToTopHeight="24dp"
                     android:lastBaselineToBottomHeight="24dp"
+                    android:maxHeight="200dp"
                     android:textAppearance="?textAppearanceBody2"
+                    app:autoSizeStepGranularity="1dp"
+                    app:autoSizeTextType="uniform"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
