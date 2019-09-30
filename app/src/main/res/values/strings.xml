@@ -15,7 +15,7 @@
     <string name="step_two_title">See How You Can Help</string>
     <string name="step_three_title">Take Action</string>
     <string name="guide_complete_title">User Guide Complete</string>
-    <string name="step_one_body">HowtoHelp is like as an add-on to your favourite Android web browser or news application. When you\'re reading about a social issue, press the browser or application\'s share button and select HowtoHelp. The share button normally looks like the above image\n\nSwipe left to see step 2\n\n\ntext overflow\n\ntest</string>
+    <string name="step_one_body">HowtoHelp is like as an add-on to your favourite Android web browser or news application. When you\'re reading about a social issue, press the browser or application\'s share button and select HowtoHelp. The share button normally looks like the above image\n\nSwipe left to see step 2</string>
     <string name="step_two_body">HowtoHelp will tell you what you can do right now to combat the issue. All of these opportunities can be completed within minutes. You can navigate between opportunities by swiping (just like you\'re doing right now)</string>
     <string name="step_three_body">Press an opportunity\’s button to complete it in your web browser</string>
     <string name="guide_complete_body">That’s it! You’re good to go.\n\nRemember to think of HowtoHelp whenever you want to help tackle an issue you’re reading about. It only takes a few minutes</string>
