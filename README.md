@@ -3,7 +3,7 @@
 ![HowtoHelp Image](https://i.snipboard.io/0l8VgF.jpg)
 
 ## Problem
-__You are reading an alarming article about homelessness or climate change. You want to do something RIGHT NOW to help. But the article offers no information on how to do so. You won’t have time on your commute to research this yourself. You make a mental note to try to help in the future, but you inevitably become preoccupied with life’s demands.__
+_You are reading an alarming article about homelessness or climate change. You want to do something RIGHT NOW to help. But the article offers no information on how to do so. You won’t have time on your commute to research this yourself. You make a mental note to try to help in the future, but you inevitably become preoccupied with life’s demands._
 
 ## Solution
 HowtoHelp provides you with quick actions that you can take to combat the issue you’re reading about. All you have to do is share the article with HowtoHelp. Within seconds, you’ll see relevant petitions to sign, politicians to contact, and research to assist. All of these can be completed within minutes from your Android device.
