@@ -39,6 +39,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/user_guide_card_overline"
                     android:layout_width="wrap_content"
+                    android:textSize="@dimen/_11sdp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
@@ -53,6 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
+                    android:textSize="@dimen/_15sdp"
                     android:alpha="0.87"
                     android:firstBaselineToTopHeight="24dp"
                     android:paddingRight="24dp"
@@ -71,10 +73,9 @@
                     android:firstBaselineToTopHeight="24dp"
                     android:lastBaselineToBottomHeight="24dp"
                     android:textAppearance="?textAppearanceBody2"
-                    android:maxHeight="200dp"
-                    app:autoSizeStepGranularity="1sp"
-                    app:autoSizeMinTextSize="1sp"
-                    app:autoSizeTextType="uniform"
+                    android:textSize="@dimen/_13sdp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/user_guide_card_title"
@@ -94,9 +95,11 @@
                     app:layout_constraintTop_toBottomOf="@id/user_guide_card_body" />
 
 
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
