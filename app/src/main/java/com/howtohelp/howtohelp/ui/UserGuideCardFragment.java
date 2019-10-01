@@ -1,7 +1,9 @@
 package com.howtohelp.howtohelp.ui;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,10 +51,12 @@ public class UserGuideCardFragment extends Fragment {
               }
             })
         .setPositiveButton(
-            "Close HowtoHelp",
+            "View Example Article",
             new DialogInterface.OnClickListener() {
               public void onClick(DialogInterface dialog, int which) {
-                getActivity().finishAndRemoveTask();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(getResources().getString(R.string.sample_article_url)));
+                startActivity(intent);
               }
             })
         .setIcon(R.drawable.logo)

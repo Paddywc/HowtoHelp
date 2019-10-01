@@ -28,7 +28,7 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/user_guide_card_header"
                     android:layout_width="match_parent"
-                    android:layout_height="192dp"
+                    android:layout_height="@dimen/_150sdp"
                     android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -73,7 +73,7 @@
                     android:firstBaselineToTopHeight="24dp"
                     android:lastBaselineToBottomHeight="24dp"
                     android:textAppearance="?textAppearanceBody2"
-                    android:textSize="@dimen/_13sdp"
+                    android:textSize="@dimen/_12sdp"
 
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"

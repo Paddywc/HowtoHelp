@@ -141,7 +141,8 @@ public class OpportunitiesCollectionFragment extends Fragment {
                   .replace(R.id.container, UserGuideFragment.newInstance())
                   .commitNow();
             })
-        .setPositiveButton("Close HowtoHelp", (dialog, which) -> getActivity().finishAndRemoveTask())
+        .setPositiveButton(
+            "Close HowtoHelp", (dialog, which) -> getActivity().finishAndRemoveTask())
         .setIcon(android.R.drawable.ic_dialog_alert)
         .show();
   }
@@ -165,7 +166,8 @@ public class OpportunitiesCollectionFragment extends Fragment {
                   .replace(R.id.container, UserGuideFragment.newInstance())
                   .commitNow();
             })
-        .setPositiveButton("Close HowtoHelp", (dialog, which) -> getActivity().finishAndRemoveTask())
+        .setPositiveButton(
+            "Close HowtoHelp", (dialog, which) -> getActivity().finishAndRemoveTask())
 
         // A null listener allows the button to dismiss the dialog and take no further
         // action.
