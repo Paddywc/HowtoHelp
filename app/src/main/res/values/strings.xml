@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">HowtoHelp</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="donate_button_text">Donate</string>
     <string name="microvolunteering_button_text">Help</string>
-    <string name="politician_overline">Contact your Public Representative</string>
     <string name="politician_card_body">%1$s (%3$s) is an elected representative in %2$s.\n\nContact them and call for action on this issue</string>
     <string name="twitter_button_text">Twitter</string>
     <string name="email_button_text">Email</string>
@@ -22,7 +20,6 @@
     <string name="guide_complete_body">That’s it! You’re good to go.\n\nRemember to think of HowtoHelp whenever you want to help tackle an issue you’re reading about. It only takes a few minutes\n\nOr try the app out with our example article</string>
     <string name="user_guide_button">Button</string>
     <string name="sample_article_url">https://www.bbc.com/news/science-environment-49773869</string>
-    <string name="user_guide_button_press_message">That\'s it! You\'re ready to go</string>
     <string name="user_guide_title">Reading About a Social Issue and Want to Act Now?</string>
     <string name="user_guide_subtitle">Here\'s HowtoHelp</string>
     <string name="guide_toolbar_title">HowtoHelp Guide</string>
